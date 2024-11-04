@@ -1,0 +1,22 @@
+
+<div class="pa1">
+  <div class="overflow-auto">
+    <h2 class="sw-header tc">My histroy</h2>  
+    <table class="f6 w-100 mw8 center" cellspacing="0">
+      <thead>
+        <tr class="stripe-dark">
+          <th class="fw6 tl pa3 bg-white">Date</th>
+          <th class="fw6 tl pa3 bg-white">Weight (Kgs)</th>
+        </tr>
+      </thead>
+      <tbody class="lh-copy">
+        {{#each rows}}
+        <tr class="stripe-dark">
+          <td class="pa3">{{this.createddate}}</td>
+          <td class="pa3">{{this.weight_kgs__c}}</td>
+        </tr>
+       {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>

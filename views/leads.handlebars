@@ -1,0 +1,22 @@
+
+<div class="pa1">
+  <div class="overflow-auto">
+    <h2 class="tc">Leads</h2>  
+    <table class="f6 w-100 mw8 center" cellspacing="0">
+      <thead>
+        <tr class="stripe-dark">
+          <th class="fw6 tl pa3 bg-white">Name</th>
+          <th class="fw6 tl pa3 bg-white">Email</th>
+        </tr>
+      </thead>
+      <tbody class="lh-copy">
+        {{#each rows}}
+        <tr class="stripe-dark">
+          <td class="pa3">{{this.name}}</td>
+          <td class="pa3">{{this.email}}</td>
+        </tr>
+       {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
